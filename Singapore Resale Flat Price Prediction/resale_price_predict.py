@@ -36,7 +36,7 @@ def get_base64_of_bin_file(bin_file):
         with open(bin_file, 'rb') as f:
             data = f.read()
         return base64.b64encode(data).decode()
-background_image_path = r'C:\My Setups\Singapore Flat Resale Pricing\i2.jpg'
+background_image_path = r'i2.jpg'
 base64_image = get_base64_of_bin_file(background_image_path)
 page_bg_img = f"""
 <style>
