@@ -1,0 +1,7 @@
+version: 1
+services:
+  - type: web
+    name: singapore-flat-resale-price-prediction
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run resale_price_predict.py --server.port $PORT --server.address 0.0.0.0
