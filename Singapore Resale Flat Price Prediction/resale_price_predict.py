@@ -98,4 +98,4 @@ with placeholder.container():
         if st.button("Predict Resale Price"):
             prediction = model_dt.predict(input_data)
             predicted_price = np.exp(prediction[0])  
-            st.markdown(f"<h3 style='color: #36454F;'>The predicted Resale Price is: {predicted_price:,.2f}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='color: #36454F;'>The predicted Resale Price is: ${predicted_price:,.2f}</h3>", unsafe_allow_html=True)
